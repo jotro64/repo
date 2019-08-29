@@ -28,4 +28,5 @@ li a {
   
 li a:hover {
     background-color: #3281af;
+    border: 1px solid white;
 }
