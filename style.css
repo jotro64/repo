@@ -5,16 +5,26 @@ ul {
     overflow: hidden;
     background-color: #3992c5;
 }
+
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100px;
+    background-color: #77c7f5;
+    padding-left: 16px;
 }
+
+header:hover {    
+    color: #1b1b1b;
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
 li {
     float: left;
+    ;
 }
   
 li a {
