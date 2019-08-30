@@ -15,8 +15,8 @@ header {
 }
 
 header:hover {    
-    color: #77c7f5;
-    background-color: white;
+    color: white;
+    background-color: #77c7f5;
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 83.2px;
     text-transform: lowercase;
