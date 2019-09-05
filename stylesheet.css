@@ -1,3 +1,12 @@
+html
+,body {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
+}
+
 /* Overlay (background) */
 .overlay{
     height:100%;
@@ -24,7 +33,7 @@
 .overlay a{
     padding:8px;
     text-decoration:none;
-    font-size:36px;
+    font-size:7vh;
     color: #818181;
     display:block; /* Display block instead of inline */
     transition: 0.3s;
@@ -56,10 +65,39 @@
     }
 }
 
-h1 {
-    background-color: #eeeeee;
-    font-family: Arial, Helvetica, sans-serif;
-    height:100vh;
+.footer {
+    height: 10vh;
+    width:100vw;
+    background-color: #4fb9ff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:90vh;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+
+.header {
+    position:sticky;
     display:flex;
-    padding:5px;
+    background-color: #eeeeee;
+}
+
+.header-button {
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.home-text-container  {
+  width: 100vw;
+  height: 80vh;  
+  display: flex;
+}
+
+.home-text {
+  height: 70vh;
+  width: 80%;
+  margin: 20px 20px ;
+  background-color: #ffffff;
+  margin-left: 10%;
 }
