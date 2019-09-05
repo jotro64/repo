@@ -7,6 +7,16 @@ html
   font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
 }
 
+body{
+    background: repeating-linear-gradient(
+        -55deg,
+        #f3f3f357,
+        #f3f3f357 1vh,
+        white 1vh,
+        white 2vh
+    );
+}
+
 /* Overlay (background) */
 .overlay{
     height:100%;
@@ -68,7 +78,7 @@ html
 .footer {
     height: 10vh;
     width:100vw;
-    background-color: #4fb9ff;
+    background-color: #00c3ff;
     display: flex;
     align-items: center;
     position: absolute;
@@ -80,24 +90,32 @@ html
 .header {
     position:sticky;
     display:flex;
-    background-color: #eeeeee;
+    background-color: #f3f3f3;
 }
 
 .header-button {
     margin-left:20px;
     margin-top:20px;
+    margin-bottom:20px;
+    transition:0.3s;
 }
 
-.home-text-container  {
-  width: 100vw;
-  height: 80vh;  
-  display: flex;
+.header-button:hover, .header-button:focus{
+    color:#00c3ff;
 }
 
-.home-text {
-  height: 70vh;
-  width: 80%;
-  margin: 20px 20px ;
-  background-color: #ffffff;
-  margin-left: 10%;
+.home-text-container{
+    width: 80vw;
+    height: 80vh;  
+    display: flex;
+    margin: 0 auto;
+    background-color:white;
+}
+
+.home-text{
+    height: 70vh;
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-top: 0px;
 }
