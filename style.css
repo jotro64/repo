@@ -7,30 +7,6 @@ ul {
     text-align: center;
 }
 
-header {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100px;
-    background-color: #77c7f5;
-    color: white;
-    padding-left: 1%;
-}
-
-header:hover {    
-    background-color: #77c7f5;
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 83.2px;
-    text-transform: lowercase;
-}
-
-header:hover:first-letter{
-    text-transform: uppercase;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
 h1 {
     font-family: 'Arial', 'Verdana', sans-serif;
     font-size: 20px;
