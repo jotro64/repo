@@ -2,34 +2,31 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js"></script>
         <title>Otto's portfolio - Dashboard</title>
     </head>
     <body>
 
-        <nav>   <!--Dit is de navbar-->    
-        <ul>
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="profile.html">
-                    Profiel
-                </a>
-            </li>
-            <li>
-                <a href="dashboard.html">
-                    Dashboard
-                </a>
-            </li>
-        </ul>
-        </nav>
+        <!-- The overlay -->
+        <div id="nav" class="overlay">
 
-        <h1>
-            Mijn dashboard
-        </h1>
+            <!-- Button to close overlay nav -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html">home</a>
+                <a href="profile.html">profiel</a>
+                <a href="dashboard.html">dashboard</a>
+            </div>
+
+        </div>
+
+        <div class="header">
+            <!-- Open overlay nav -->
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
 
     </body>
 </html>

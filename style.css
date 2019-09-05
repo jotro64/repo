@@ -1,48 +1,58 @@
-ul {
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3992c5;
-    text-align: center;
+/* Overlay (background) */
+.overlay{
+    height:100%;
+    width:0;
+    position:fixed; /* Stay in place */
+    z-index:1; /* Sit on top */
+    left:0;
+    top:0;
+    background: rgb(0,0,0,0.9);
+);
+    overflow-x:hidden; /* Disable scroll */
+    transition: 0.5s;
 }
 
-h1 {
-    font-family: 'Arial', 'Verdana', sans-serif;
-    font-size: 20px;
-}
-
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-  
-li a:hover {
-    background-color: #3281af;
-}
-
-.kaas{
-    background-color:red;
-    transition: all 1s;
-    color:white;
-    font-family:sans-serif;
+/* Position content inside overlay */
+.overlay-content{
+    position:relative;
+    top:25%;
+    width:100%;
     text-align:center;
-    margin: 0 auto;
-    display:block;
-    height:;
-    width:100px;
-    padding-top:41.75px;
-    padding-bottom:41.75px;
+    margin-top:30px;
 }
 
-.kaas:hover{
-    background-color:blue;
+/* Nav links inside overlay */
+.overlay a{
+    padding:8px;
+    text-decoration:none;
+    font-size:36px;
+    color: #818181;
+    display:block; /* Display block instead of inline */
+    transition: 0.3s;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Hover -> change color */
+.overlay a:hover, .overlay a:focus {
+    color:#00c3ff;
+    font-weight:bold;
+}
+
+/* Position close btn (top right) */
+.overlay .closebtn{
+    position:absolute;
+    top:20px;
+    right:45px;
+    font-size:60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px){
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
