@@ -55,11 +55,16 @@ li a:hover {
 
 .kaas{
     background-color:red;
-    transition: all 2s;
+    transition: all 1s;
     color:white;
     font-family:sans-serif;
     text-align:center;
     margin: 0 auto;
+    display:block;
+    height:;
+    width:100px;
+    padding-top:41.75px;
+    padding-bottom:41.75px;
 }
 
 .kaas:hover{
