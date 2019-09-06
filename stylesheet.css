@@ -206,8 +206,8 @@ body{
 }
 
 .image-gallery:hover, .image-gallery:focus{
-    width:50vw;
-    height:auto;
+    width:auto;
+    height:40vh;
     z-index:1;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border: 3px solid #000000;
@@ -289,3 +289,56 @@ body{
     background-color: #555;
     color: white;
   }
+  
+.studiepunten {
+
+    margin: 30px 10px;
+    height: 39%;
+    width: 20vw;
+    float: left;
+    background-color: #f1f1f1; 
+    border: 0.5px solid grey;
+    
+  
+  
+  }
+  
+  .text {
+  
+    margin: 10px;
+  
+  }
+  .fixed_header{
+
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: auto;
+    border: 0.5px solid grey;
+    table-layout: fixed;
+  }
+  
+  .fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+  height: 30vh;
+  }
+  
+  .fixed_header thead tr {
+   display: block;
+  }
+  
+  .fixed_header thead {
+    background-color: #ccce;
+    color: #666;
+  }
+  
+  .fixed_header th, .fixed_header td {
+  text-align: left;
+  width: 200px;
+  padding: 8px;
+  border: 0.5px solid grey;
+  }
+  
+  .fixed_header tr:nth-child(even){background-color: #f2f2f2}  
