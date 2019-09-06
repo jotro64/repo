@@ -68,10 +68,10 @@ body{
 }
 
 .overlay-content a:hover, a:focus{
-    animation-name:wobble;
-    animation-duration:0.5s;
+    /* animation-name:wobble;
+    animation-duration:0.2s;
     animation-delay:0.1s;
-    animation-timing-function:linear;
+    animation-timing-function:linear; */
 }
 
 @keyframes wobble {
@@ -140,7 +140,7 @@ body{
 
 .header-button:hover, .header-button:focus{
     color:#00c3ff;
-    transform:rotate(180deg);
+    margin-left:22px;
 }
 
 .home-text-container{
