@@ -153,6 +153,11 @@ body{
     border-right:3px solid #f3f3f3;
 }
 
+.home-text-container-dashboard{
+    width: 100vw;
+    height: 100vh;  
+    background-color:white;
+}
 .home-text{
     height: 70vh;
     width: 80%;
@@ -219,6 +224,7 @@ body{
     background-color: #fff;
     height: 80vh;
     max-width: 100%;
+    display:flex;
 }
 
 .topcontainer {
@@ -245,8 +251,9 @@ body{
   .wrapperdashboard {
   
     width: 90%;
-    margin: 0px -10%;
-  
+    left: 100vw;
+    right:10vw;
+    display:flex;
   
   
   }
