@@ -103,6 +103,7 @@ body{
 
 .header-button:hover, .header-button:focus{
     color:#00c3ff;
+    margin-left:22px;
 }
 
 .home-text-container{
@@ -127,7 +128,7 @@ body{
     width: 200px;
     border-radius: 5px;
     text-align: center;
-    height: 70%;
+    height: 65%;
     float: right;
     margin: 20px;
     background-color:#4fb9ff;
@@ -138,6 +139,36 @@ body{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
   
-img {
+.card-image {
     border-radius: 5px 5px 0 0;
+}
+* {
+    box-sizing: border-box;
+}
+  
+.row {
+    display: flex;
+}
+  
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    padding: 15px;
+}
+
+.image-gallery{
+    width: auto;
+    transition:0.3s;
+    z-index:0;
+    position:relative;
+    height:100px;
+    border: 1px solid #777;
+}
+
+.image-gallery:hover, .image-gallery:focus{
+    width:250%;
+    height:auto;
+    z-index:1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 3px solid #000000;
 }
