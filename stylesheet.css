@@ -57,6 +57,43 @@ body{
     font-weight:bold;
 }
 
+.closebtn:hover, .closebtn:focus{
+    transform:rotate(90deg);
+
+    animation-name:zoef,kleurtjes;
+    animation-delay:10s;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+.overlay-content a:hover, a:focus{
+    animation-name:wobble;
+    animation-duration:0.5s;
+    animation-delay:0.1s;
+    animation-timing-function:linear;
+}
+
+@keyframes wobble {
+    0% {transform:rotate(1deg);}
+    50% {transform:rotate(-2deg);}
+    100% {transform:rotate(1deg);}
+}
+
+@keyframes zoef {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes kleurtjes {
+    0% {color:blue;text-shadow:  0 0 20px blue;}
+    20% {color:pink;text-shadow: 0 0 20px pink;}
+    40%{color:red;text-shadow: 0 0 20px red;}
+    60%{color:orange;text-shadow: 0 0 20px orange;}
+    80%{color:yellow;text-shadow: 0 0 20px yellow;}
+    100%{color:green;text-shadow: 0 0 20px green;}
+}
+
 /* Position close btn (top right) */
 .overlay .closebtn{
     position:absolute;
@@ -103,7 +140,7 @@ body{
 
 .header-button:hover, .header-button:focus{
     color:#00c3ff;
-    margin-left:22px;
+    transform:rotate(180deg);
 }
 
 .home-text-container{
@@ -112,6 +149,8 @@ body{
     display: flex;
     margin: 0 auto;
     background-color:white;
+    border-left:3px solid #f3f3f3;
+    border-right:3px solid #f3f3f3;
 }
 
 .home-text{
