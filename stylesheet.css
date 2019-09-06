@@ -243,6 +243,7 @@
 }
 
 .topcontainer {
+    margin-left:20px;
     height: 50%;
     display: flex;
 }
@@ -305,6 +306,7 @@
 }
 
 .fixed_header{
+    margin:20px auto;
     border-collapse: collapse;
     width: auto;
     border: 0.5px solid grey;
