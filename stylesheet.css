@@ -5,13 +5,14 @@
   overflow: hidden;
   font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
 
-  background: repeating-linear-gradient(
+  /* background: repeating-linear-gradient(
     -55deg,
     #f3f3f357,
     #f3f3f357 1vh,
     white 1vh,
     white 2vh
-);
+); */
+background-color:pink;
 }
 
 .body-dashboard {
