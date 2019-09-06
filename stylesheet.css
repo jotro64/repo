@@ -244,21 +244,19 @@
 
 .topcontainer {
     margin-left:20px;
-    height: 50%;
-    display: flex;
-}
-
-.bottomcontainer {
-
-    height: 50%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.topcontainer {
+    margin-top:10px;
     height: 50%;
     display: flex;
     flex-direction: column;
+    margin-bottom:10px;
+}
+
+.bottomcontainer {
+    margin-top:20px;
+    margin-right:20px;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
 }
   
 .wrapperdashboard {
